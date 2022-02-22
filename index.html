@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Bootstrapt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300&display=swap" rel="stylesheet">
+ 
+    <title>Home - Estudio Activo</title>
+
+    <!-- menu principal -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid contenedorLogoHeader">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="Logo Estudio ACTIVO" class= "logoHeader" >
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse d-lg-flex flex-row-reverse" id="navbarNav">
+                
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item selectedPage">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/nosotros.html">Sobre Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">Nuestros Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/proyectos.html">Proyectos Realizados</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--SEO-->
+
+    <meta name="description" content="Estudio de Diseño Gráfico, Diseño Audiovisual, Diseño Web, Redes Sociales y Marketing Online">
+    <meta name="keywords"  content="DISENO GRAFICO, DISENO, GRAFICO, AUDIOVISUAL, DISENO AUDIOVISUAL, ESTUDIO, ESTUDIO GRAFICO, AGENCIA, COMUNICACION, MARKETING">
+
+</head>
+
+<body>
+
+    <!-- slide inicial -->
+    <header>
+        <img src="./img/bannerHome.png" alt="Banner Home" class="bannerHome">
+
+        <h1>ESTUDIO ACTIVO</h1>
+        
+    </header>
+
+    <!--contenido de la pagina-->
+    <main>
+        
+    <!--frase relacionada al diseño-->
+        <section>
+            <p class="frase">Cada gran diseño comienza con una historia aún mejor.</p>
+        </section>
+
+    <!--cards preview de secciones-->
+
+    <section class="cardsHome">
+        <div class="cardSecciones">
+            <a href="./pages/nosotros.html">
+            <img src="img/quienesSomos.jpg" alt="Equipo trabajando">
+            <p>QUIENES SOMOS</p>
+            </a>
+        </div>
+    
+        <div class="cardSecciones">
+            <a href="./pages/servicios.html">
+            <img src="img/nuestrosServicios.jpg" alt="Diseñadora trabajando">
+            <p>NUESTROS SERVICIOS</p>
+            </a>
+        </div>
+    
+        <div class="cardSecciones">
+            <a href="./pages/proyectos.html">
+            <img src="img/proyectosRealizados.jpg" alt="Diseño de APP">
+            <p>PROYECTOS REALIZADOS</p>
+            </a>
+        </div>
+    </section>
+
+    <!--preview texto sobre el estudio-->
+        <section class="previewNosotros">
+            <div>
+                <h2>Sobre nosotros</h2>
+            </div>
+            <div>
+                <p>Somos un estudio de diseño y agencia de marketing con sede en Buenos Aires. Nos dedicamos al Diseño Gráfico, Diseño Web, Redes Sociales, Creación de contenidos y Marketing Digital.</p>
+                
+                <div class="botonSecciones">
+                    <a href="pages/nosotros.html">Conocenos un poco más</a>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+
+
+    <!--pie de pagina-->
+    <footer>
+
+        <section class="contenidoFooter">
+            
+        <!--logo-->
+            <div class="logoRedesFooter">
+                <div class="logoFooter">
+                <img src="img/logo.png" alt="Logo Estudio ACTIVO">
+                </div>
+                
+                <div class="redesFooter">
+                <a href="https://instagram.com/estudioactivo" target="blanc"><img src="img/iconIG.png" alt="Icono Instagram"  class="iconIG"></a>
+                <a href="https://facebook.com/estudioactivo" target="blanc"><img src="img/iconFB.png" alt="Icono Facebook" class="iconFB"></a>
+                </div>
+            </div>
+
+                
+    <!--formulario de contacto-->
+            <div class="contenedorFormFooter">
+                <form>
+                        <legend>Dejanos tu consulta</legend>
+                            <div>
+                                <input type="text" placeholder="Nombre" required>
+                            </div>
+                            
+                            <div>
+                                <input type="email" placeholder="E-mail" required>
+                            </div>
+                            
+                            <div>
+                                <input type="text" placeholder="Teléfono">
+                            </div>
+
+                            <div>
+                                <input type="text" placeholder="Tu consulta" required>
+                            </div>
+                            
+                            <div>
+                                <input type="submit" class= "submit">
+                            </div>
+                </form>
+            </div>
+
+        </section>
+
+        <div>
+            <p>Todos los derechos reservados.</p>
+        </div>       
+    </footer>
+
+
+
+<!--Link JS Bootstrapt-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

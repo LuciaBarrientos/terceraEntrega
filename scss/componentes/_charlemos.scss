@@ -1,0 +1,48 @@
+@import "../base/listas";
+@import "../base/mixin";
+
+
+.charlemos {
+    padding: 30px;
+    background-color: nth($colores,5);
+    width: 100%;
+
+    p {
+        text-align: center;
+        font-weight: normal;
+        font-size: 30px;
+        color: nth($colores,1);
+    }
+
+    input {
+        width: 100%;
+        padding: 0% 2% 0% 2%;
+        border:none;
+        border-bottom: solid 1px nth($colores,1);
+    }
+
+    .consulta {
+        width: 100%;
+        padding: 0% 2% 0% 2%;
+        height: 100px;
+        border:none;
+        border-bottom: solid 1px nth($colores,1);
+        
+    }
+
+    .submit {
+        width: 100%;
+        padding: 5px 0px 5px 0px;
+        margin-top: 5px;
+        background-color: nth($colores,1);
+        color: nth($colores,6);
+        font-weight: bold;
+        text-transform: uppercase;
+        border:none;
+        border-radius: 2px;
+             
+        &:hover {
+            background-color: nth($colores,8);
+        }
+    }
+}

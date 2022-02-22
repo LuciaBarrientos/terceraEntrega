@@ -1,0 +1,59 @@
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/mixin";
+
+.servicios {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    .cardServicios {
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        @include border (nth($colores,5));
+        border-radius: $border-card;
+        margin: 8%;
+
+        &:hover {
+            width: 82%;
+            transition: $transition;
+        }
+
+        p {
+            padding-top: 1rem;
+        }
+    
+        img {
+            width: 100%;
+            border-radius: $border-card;
+        }
+    
+        iframe {
+            width: 100%;
+            border-radius: $border-card;
+        }
+
+        a {
+            font-weight: bold;
+            color: nth($colores,1);
+            
+        }
+
+        .servicioDescrip {
+            font-size: 15px;
+            margin: 15px;
+            color: nth($colores,2);
+            border: none;
+            background-color: none;
+
+            &:hover {
+                background-color: nth($colores,5);
+            }
+        }
+    }
+
+    @media screen and (max-width: 599px) {
+        grid-template-columns: auto;
+    }
+}
+

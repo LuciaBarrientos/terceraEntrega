@@ -1,0 +1,61 @@
+@import "../base/listas";
+
+
+.contacto {
+    display:grid;
+    grid-template-columns: auto auto;
+    color: nth($colores,2);
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contactoMapa {
+        margin: 40px;
+        display:grid;
+        justify-content: right;
+
+        @media screen and (max-width: 1200px) {
+            margin: 10px;
+        }
+    }
+
+    .contactoDatos {
+        margin: 40px;
+        display:grid;
+        justify-content: left;
+    }
+    
+    .agencia {
+        font-weight: normal;
+        font-size: 30px;
+        padding-top:5%;
+    }
+
+    .iconIGContact {
+        width: 45px;
+        margin-right: 15px;
+
+        &:hover{
+            transform: scale(1.2);
+            
+        }
+    }
+
+    .iconFBContact {
+        width: 20px;
+
+        &:hover {
+            transform: scale(1.2)
+            
+        }
+    }
+    
+    a {
+        color: nth($colores,2);
+    }
+
+
+}

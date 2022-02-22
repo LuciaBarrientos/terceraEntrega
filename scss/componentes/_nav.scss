@@ -1,0 +1,84 @@
+@import "../base/variables";
+@import "../base/listas";
+
+nav {
+    background-color: nth($colores,6);
+    display: flex ;
+    justify-content: space-between;
+    position: sticky !important; 
+    z-index:200 !important;
+    top: 0px !important;
+
+        ul {
+            display:flex;
+            padding:20px;
+        }
+
+        li {
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            color: nth($colores,3);
+            &:hover {
+                color: nth($colores,2);
+                background: nth($colores,5);
+                transform: scale(1.1);
+                transition: $transition;
+                font-weight: bold;
+            }
+        }
+
+        .logoHeader {
+            width: 60%;
+            margin: 20px;
+            &:hover {
+                transform: scale(1.2);
+                transition: $transition;
+            }
+        }
+
+        .selectedPage {
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 1200px) and (min-width: 600px){
+
+            .logoHeader {
+                width: 90%; 
+            }
+
+            ul {
+                margin: 5px;
+                text-align: center;
+                padding: 5px;
+
+
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 599px){
+            align-items: center;
+            background-color: nth($colores,6);
+            width: 100%;
+
+            ul {
+                align-items: center;
+                width: 100%;
+                padding: 0%;
+                text-align: center;
+                margin: 2%;
+            
+
+                li {
+                    padding: 0%;
+                    margin: 3%;
+                    font-size: 20px;
+                }
+            }
+        }
+
+}

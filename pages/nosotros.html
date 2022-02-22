@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Bootstrapt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300&display=swap" rel="stylesheet">
+
+    <title>Nosotros - Estudio Activo</title>
+
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid contenedorLogoHeader">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="Logo Estudio ACTIVO" class= "logoHeader" >
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse d-lg-flex flex-row-reverse" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Sobre Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Nuestros Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/proyectos.html">Proyectos Realizados</a>
+                    </li>
+
+                    <li class="nav-item selectedPage">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--SEO-->
+    <meta name="description" content="Conoce a nuestro equipo de profesionales">
+    <meta name="keywords"  content="equipo, equipo de trabajo, teamwork, cowork, diseñador, diseño grafico, diseño audiovisual, diseñador audiovisual, desarrollo, desarrollo web, director creativo, creativo">
+</head>
+<body>
+
+
+    <!-- Banner inicial -->
+    <header>
+        <img src="../img/bannerNosotros.png" alt="Banner Sobre Nosotros" class="bannerHome">
+
+        <h1>NOSOTROS</h1>
+    </header>
+
+    <main>
+        
+        <!--Preview texto sobre el estudio-->
+        <section class="equipo">
+            <div class="equipoTitulo">
+            <h2>Conocé a nuestro equipo</h2>
+            </div>
+            
+            <div class="equipoParrafo">
+            <p>Estudio Activo es un proyecto de tres amigos que son tan opuestos como complementarios. Enfocados cada uno en su área, trabajamos en conjunto para brindarle una respuesta a cada una de tus necesidades.</p>
+            </div>
+        </section>
+
+
+        <!--Fotos de miembros del equipo-->
+        <section class="equipoFotos">
+            <div class="equipoMiembro">
+                <img src="../img/staff01.jpg" alt="Miembro 01 Equipo" class="fotoMiembro">
+                <p class="equipoNombre">MORA LOPEZ</p>
+                <p class="equipoRol">Directora Creativa</p>
+            </div>
+        
+            <div class="equipoMiembro">
+                <img src="../img/staff02.jpg" alt="Miembro 02 Equipo" class="fotoMiembro">
+                <p class="equipoNombre">ORNELLA FLORENTIN</p>
+                <p class="equipoRol">Diseñora Gráfica</p>
+            </div>
+        
+            <div class="equipoMiembro">
+                <img src="../img/staff03.jpg" alt="Miembro 03 Equipo" class="fotoMiembro">
+                <p class="equipoNombre">LEÓN GOMEZ</p>
+                <p class="equipoRol">Diseñador Audiovisual</p>
+            </div>
+                    
+        </section>
+
+        <!--Apartado "Sumate a nuestro equipo"-->
+        <section class="sumate">
+            <p>Sumate a nuestra familia</p>
+
+            <a href="mailto:activoestudiografico@gmail.com" class="botonNosotros">Envianos tu portfolio</a>
+        </section>
+        
+    </main>
+
+    <!--Pie de pagina-->
+    <footer>
+
+    <section class="contenidoFooter">
+    <!--Logo-->
+    <div class="logoRedesFooter">
+        <div class="logoFooter">
+        <img src="../img/logo.png" alt="Logo Estudio ACTIVO">
+        </div>
+        
+        <div class="redesFooter">
+            <a href="https://instagram.com/estudioactivo" target="blanc"><img src="../img/iconIG.png" alt="Icono Instagram"  class="iconIG"></a>
+            <a href="https://facebook.com/estudioactivo" target="blanc"><img src="../img/iconFB.png" alt="Icono Facebook" class="iconFB"></a>
+        </div>
+    </div>
+
+    <!--Formulario de contacto-->
+        <div>
+            <form class="formFooter">
+                    <legend>Dejanos tu consulta</legend>
+                        <div>
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        
+                        <div>
+                            <input type="email" placeholder="E-mail" required>
+                        </div>
+                        
+                        <div>
+                            <input type="text" placeholder="Teléfono">
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Tu consulta">
+                        </div>
+                        
+                        <div>
+                            <input type="submit" class= "submit">
+                        </div>
+            </form>
+        </div>
+
+    </section>
+            
+    <div>
+        <p class="derechosFooter">Todos los derechos reservados.</p>
+    </div>     
+    </footer>
+
+
+<!--Link JS Bootstrapt-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

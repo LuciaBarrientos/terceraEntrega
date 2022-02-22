@@ -1,0 +1,121 @@
+@import "listas.scss";
+
+// frases diseño //
+
+%frases {
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+    color: nth($colores,1);
+    margin: 50px 0px 50px 0px;
+
+    @media only screen and (max-width: 1200px) and (min-width: 600px){
+        font-size: 25px;
+        margin: 5%;
+    }
+
+    @media screen and (max-width: 599px){
+        font-size: 30px;
+        margin: 5%;
+    }
+}
+
+
+.frase {
+    @extend %frases;
+}
+
+.sumate p {
+    @extend %frases;
+}
+
+
+.frase {
+    @extend %frases;   
+}
+
+
+
+
+
+//preview secciones//
+
+%secciones {
+    background-color: nth($colores,5);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 20% 50%;
+    justify-content: center;
+
+    h2 {
+        color: nth($colores,1);
+        font-size: 35px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+      @media screen and (max-width: 1200px){
+        grid-template-columns: auto;
+        text-align: center;
+        font-size: 15px;
+        padding: 5%;
+
+        h2 {
+            margin-bottom: 5%;
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.previewNosotros {
+    @extend %secciones;
+}
+
+.equipo {
+    @extend %secciones;
+}
+
+
+
+
+%botonSecciones {
+    border: 1px solid nth($colores,1);
+    border-radius: 40px;
+    padding: 10px;
+    display: inline-block;
+    justify-content: center;
+    
+
+    a {
+        font-style: italic;
+        font-weight: bold;
+        color: nth($colores,1);
+    }
+    
+
+    &:hover {
+        background-color: nth($colores,1);
+
+        a {
+            color: nth($colores,6); 
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        font-size: 20px;
+    }
+
+}
+
+
+.botonSecciones {
+    @extend %botonSecciones;
+}
+

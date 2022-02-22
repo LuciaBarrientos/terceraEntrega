@@ -1,0 +1,39 @@
+//import base//
+
+@import "base/variables";
+@import "base/extend";
+@import "base/listas";
+
+
+//import componentes//
+@import "componentes/ajustes";
+
+/*nav*/
+@import "componentes/nav";
+
+/*header*/
+@import "componentes/header";
+
+
+/*cards home*/
+@import "componentes/cards";
+
+
+
+/*footer*/
+@import "componentes/footer";
+
+
+/*nosotros*/
+
+@import "componentes/equipo";
+
+/*servicios*/
+@import "componentes/servicios";
+@import "componentes/charlemos";
+
+/*proyectos*/
+@import "componentes/proyectos";
+
+/*contacto*/
+@import "componentes/contacto";
